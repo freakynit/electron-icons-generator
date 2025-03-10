@@ -50,11 +50,11 @@ def generate_icons(input_image, output_path):
     os.system(f"iconutil -c icns {mac_iconset_path}")
 
     # Delete the temporary mac_iconset_path folder
-    # for file_name in os.listdir(mac_iconset_path):
-    #     file_path = os.path.join(mac_iconset_path, file_name)
-    #     if os.path.isfile(file_path):
-    #         os.remove(file_path)
-    # os.rmdir(mac_iconset_path)
+    for file_name in os.listdir(mac_iconset_path):
+        file_path = os.path.join(mac_iconset_path, file_name)
+        if os.path.isfile(file_path):
+            os.remove(file_path)
+    os.rmdir(mac_iconset_path)
 
     print(f"All generated and saved at {output_path}");
 

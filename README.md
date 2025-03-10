@@ -3,7 +3,7 @@
 A Python script to generate icons for macOS (ICNS), Windows (ICO), and Linux (PNG) from a single input image.
 
 ## Features
-- Generates macOS ICNS icons in multiple sizes (16, 32, 48, 64, 128, 256) and generates composite `icns` file. Also generats a single composite icns file containing all of these.
+- Generates macOS ICNS file containing icons in multiple sizes (16, 32, 48, 64, 128, 256).
 - Creates a 256x256 ICO file for Windows
 - Produces PNG files for Linux in the same sizes
 
