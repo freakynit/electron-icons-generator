@@ -10,6 +10,7 @@ A Python script to generate icons for macOS (ICNS), Windows (ICO), and Linux (PN
 ## Requirements
 - Python 3.x
 - Pillow (`pip install Pillow`)
+- Input image of high quality (preferably `1024x1024` and square dimensions)
 
 ## Usage
 ```bash
