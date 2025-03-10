@@ -24,7 +24,7 @@ python icon_generator.py my_image.png ./icons
 ## Output Structure
 ```
 <output_directory>/
-├── icon.icns      # macOS icon
+├── icon.icns      # composite macOS icon
 ├── icon.ico       # Windows icon (256x256)
 └── linux/         # Linux PNGs
     ├── icon_16x16.png
