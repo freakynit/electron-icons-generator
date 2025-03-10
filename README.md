@@ -6,6 +6,7 @@ A Python script to generate icons for macOS (ICNS), Windows (ICO), and Linux (PN
 - Generates macOS ICNS file containing icons in multiple sizes (16, 32, 48, 64, 128, 256).
 - Creates a 256x256 ICO file for Windows
 - Produces PNG files for Linux in the same sizes
+- Generate tray icons too with black and transparency (`--tray-threshold` between 1 and 10... whitish to darker)
 
 ## Requirements
 - Python 3.x
@@ -14,19 +15,21 @@ A Python script to generate icons for macOS (ICNS), Windows (ICO), and Linux (PN
 
 ## Usage
 ```bash
-python icon_generator.py <input_image> <output_directory>
+python icon_generator.py <input_image> <output_directory> --tray-threshold <number between 1 to 10>
 ```
 Example:
 ```bash
-python icon_generator.py my_image.png ./icons
+python icon_generator.py my_image.png ./icons --tray-threshold 5
 ```
 
 ## Output Structure
 ```
 <output_directory>/
-├── icon.icns      # Composite macOS icon
-├── icon.ico       # Windows icon (256x256)
-└── linux/         # Linux PNGs
+├── icon.icns      		# Composite macOS icon
+├── icon.ico       		# Windows icon (256x256)
+├── tray_16x16.png      # Tray icon (16x16)
+├── tray_16x16@2x.png   # Tray icon (16x16x2)
+└── linux/         		# Linux PNGs
     ├── icon_16x16.png
     ├── icon_32x32.png
     ├── icon_48x48.png
